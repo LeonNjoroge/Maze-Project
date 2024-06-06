@@ -59,7 +59,22 @@ void renderFloor(int wallBottomPixel, color_t *texelColor, int x)
  * @texelColor: texture color for current pixel
  * @x: current element in the rays array
 */
+void renderCeil(int wallTopPixel, color_t *texelColor, int x)
+{
+    int y;
 
+    // Set texelColor to blue (0xFF0000FF) for each pixel in the ceiling
+    *texelColor = 0xFF0000FF; // Blue color value
+
+    // Render the ceiling projection
+    for (y = 0; y < wallTopPixel; y++)
+    {
+        // Draw the texel color on the screen
+        drawPixel(x, y, *texelColor);
+    }
+}
+
+/** 
 void renderCeil(int wallTopPixel, color_t *texelColor, int x)
 {
 	int y, texture_width, texture_height, textureOffsetY, textureOffsetX;
@@ -89,7 +104,7 @@ void renderCeil(int wallTopPixel, color_t *texelColor, int x)
 
 	}
 }
-
+*/
 /**
  * renderWall - render wall projection
  *
