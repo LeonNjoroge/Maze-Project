@@ -64,7 +64,7 @@ void renderCeil(int wallTopPixel, color_t *texelColor, int x)
     int y;
 
     // Set texelColor to blue (0xFF0000FF) for each pixel in the ceiling
-    *texelColor = 0xFF0000FF; // Blue color value
+    *texelColor = 0xFFFFFF00; // Blue color value
 
     // Render the ceiling projection
     for (y = 0; y < wallTopPixel; y++)

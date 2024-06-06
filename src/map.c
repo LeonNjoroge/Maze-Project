@@ -80,7 +80,7 @@ void renderMap(void)
 		{
 			tileX = j * TILE_SIZE;
 			tileY = i * TILE_SIZE;
-			tileColor = map[i][j] != 0 ? 0xFFFFFF00 : 0x00000000;
+			tileColor = map[i][j] != 0 ? 0xFF0000FF : 0x00000000;  
 
 			drawRect(
 				tileX * MINIMAP_SCALE_FACTOR,

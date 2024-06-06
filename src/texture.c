@@ -8,7 +8,7 @@ static const char *textureFileNames[NUM_TEXTURES] = {
 	"./images/colorstone.png",
 	"./images/bluestone.png",
 	"./images/wood.png",
-	"./images/eagle.png",
+	
 };
 
 /**
